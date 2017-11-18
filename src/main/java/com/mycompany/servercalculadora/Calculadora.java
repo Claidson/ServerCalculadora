@@ -14,8 +14,8 @@ public class Calculadora extends UnicastRemoteObject implements CalculadoraInter
 	/**
 	 * Remote method ADD
 	 */
-	public int add(int vlrA, int vlrB) throws RemoteException {
-		System.out.println("\t\tCliente remoto invocou o m�todo ADD...");
+	public int soma(int vlrA, int vlrB) throws RemoteException {
+		System.out.println("\t\tCliente remoto invocou o metodo ADD...");
 		return vlrA + vlrB;
 	}
 	
@@ -23,15 +23,15 @@ public class Calculadora extends UnicastRemoteObject implements CalculadoraInter
 	 * Remote method SUB
 	 */
 	public int sub(int vlrA, int vlrB) throws RemoteException {
-		System.out.println("\t\tCliente remoto invocou o m�todo SUB...");
+		System.out.println("\t\tCliente remoto invocou o metodo SUB...");
 		return vlrA - vlrB;
 	}
 	
 	/**
 	 * Remote method MULT
 	 */
-	public int mult(int vlrA, int vlrB) throws RemoteException {
-		System.out.println("\t\tCliente remoto invocou o m�todo MULT...");
+	public int multi(int vlrA, int vlrB) throws RemoteException {
+		System.out.println("\t\tCliente remoto invocou o metodo MULT...");
 		return vlrA * vlrB;
 	}
 	
@@ -39,7 +39,7 @@ public class Calculadora extends UnicastRemoteObject implements CalculadoraInter
 	 * Remote method DIV
 	 */
 	public double div(int vlrA, int vlrB) throws RemoteException {
-		System.out.println("\t\tCliente remoto invocou o m�todo DIV...");
+		System.out.println("\t\tCliente remoto invocou o metodo DIV...");
 		return vlrA / vlrB;
 	}
 	
